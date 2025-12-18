@@ -71,18 +71,38 @@ def main():
     # Compute Greeks using bump-and-revalue
     results = compute_greeks(pricer)
 
-    print("Raw Numerical Output:")
-    print(json.dumps(results, indent=4))
-
     # LLM analysis
     analyzer = LLMAnalyzer(model="llama3")   # or gpt-4.1, finbert, mistral etc.
 
     summary = analyzer.analyze_results(results)
 
-    print("\n\n==================== GEN-AI ANALYSIS SUMMARY ====================\n")
-    print(summary)
-    print("\n=================================================================\n")
 
+    output_dir = os.getcwd()   # script directory
+
+    # 1. Save raw numerical results
+    results_path = os.path.join(output_dir, "results.json")
+    with open(results_path, "w") as f:
+        json.dump(results, f, indent=4)
+
+    # 2. Save LLM summary
+    summary_path = os.path.join(output_dir, "summary.txt")
+    with open(summary_path, "w") as f:
+        f.write(summary)
+
+    # 3. Save a combined human-readable report
+    report_path = os.path.join(output_dir, "report.txt")
+    with open(report_path, "w") as f:
+        f.write("===== AMERICAN OPTION PDE PRICER REPORT =====\n\n")
+        f.write("Raw Numerical Results:\n")
+        f.write(json.dumps(results, indent=4))
+        f.write("\n\n===== GEN-AI SUMMARY =====\n\n")
+        f.write(summary)
+        f.write("\n\n===============================================\n")
+
+    print("\nFiles generated:")
+    print(f" - {results_path}")
+    print(f" - {summary_path}")
+    print(f" - {report_path}")
 
 # ---------------------------------------------
 if __name__ == "__main__":

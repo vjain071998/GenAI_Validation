@@ -1,12 +1,5 @@
 #! D:\GenAI_Validation\myenv\Scripts\python.exe
 
-"""
-american_pde_pricer.py
-
-American option pricer (finite-difference PDE) with bump-based Greeks.
-Author: ChatGPT (GPT-5 Thinking mini)
-"""
-
 import numpy as np
 from dataclasses import dataclass
 
@@ -40,7 +33,7 @@ class AmericanPDEPricer:
         q: float,
         sigma: float,
         T: float,
-        option_type: str = "put",
+        option_type: str = "call",
         S_max_multiplier: float = 3.0,
         N_S: int = 400,
         N_t: int = 400,

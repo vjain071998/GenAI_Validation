@@ -56,8 +56,10 @@ Test Results (JSON):
 
     def analyze_results(self, results: Dict[str, Any]) -> str:
         prompt = self._build_prompt(results)
-
+        print("Running LLM analysis...")
+    
         if self.provider == "ollama":
+            print("Using Ollama provider.")
             return self._run_ollama(prompt)
 
         elif self.provider == "openai":

@@ -1,0 +1,164 @@
+[
+    {
+        "scenario_id": 1,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 80.0
+        },
+        "full_params": {
+            "S0": 80.0,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 0.7945312498534373
+    },
+    {
+        "scenario_id": 2,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 85.0
+        },
+        "full_params": {
+            "S0": 85.0,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 1.3868546627037737
+    },
+    {
+        "scenario_id": 3,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 90.0
+        },
+        "full_params": {
+            "S0": 90.0,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 2.2567078356388945
+    },
+    {
+        "scenario_id": 4,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 95.0
+        },
+        "full_params": {
+            "S0": 95.0,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 3.4980166037660836
+    },
+    {
+        "scenario_id": 5,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 100.0
+        },
+        "full_params": {
+            "S0": 100.0,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 5.209498999070672
+    },
+    {
+        "scenario_id": 6,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 105.0
+        },
+        "full_params": {
+            "S0": 105.0,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 7.672487710295471
+    },
+    {
+        "scenario_id": 7,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 110.00000000000001
+        },
+        "full_params": {
+            "S0": 110.00000000000001,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 10.90398469420368
+    },
+    {
+        "scenario_id": 8,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 114.99999999999999
+        },
+        "full_params": {
+            "S0": 114.99999999999999,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 15.049681936056853
+    },
+    {
+        "scenario_id": 9,
+        "changed_property": "S0",
+        "scenario_params": {
+            "S0": 120.0
+        },
+        "full_params": {
+            "S0": 120.0,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 20.0
+    }
+]

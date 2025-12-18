@@ -288,6 +288,16 @@ class AmericanPDEPricer:
             for k, v in saved.items():
                 setattr(self, k, v)
         return res
+    
+    def to_dict(self):
+        return {
+            "price": float(self.price),          # convert np.float64 → float
+            "S0_index": int(self.S0_index),
+            "info": {
+                k: float(v) if isinstance(v, np.floating) else v
+                for k, v in self.info.items()
+            }
+        }
 
 
 # ---------- Example usage ----------
