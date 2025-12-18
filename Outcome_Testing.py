@@ -43,7 +43,7 @@ results_path = os.path.join(output_dir, "OutcomeResults.txt")
 with open(results_path, "w") as f:
     json.dump(results, f, indent=4)
 
-'''
+
 summary = agent.analyze_results(results, "S0", "Call")
 output_dir = os.getcwd()   # script directory
 
@@ -52,4 +52,4 @@ output_dir = os.getcwd()   # script directory
 summary_path = os.path.join(output_dir, "OutputSummary.txt")
 with open(summary_path, "w") as f:
     f.write(summary)
-'''
+print("Summary saved to:", summary_path)
