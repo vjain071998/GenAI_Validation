@@ -1,5 +1,21 @@
 [
     {
+        "scenario_id": "Base Case",
+        "changed_property": "S0",
+        "scenario_params": {},
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200
+        },
+        "pricing_output": 5.209498999070672
+    },
+    {
         "scenario_id": 1,
         "changed_property": "S0",
         "scenario_params": {

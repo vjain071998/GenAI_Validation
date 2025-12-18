@@ -42,16 +42,19 @@ class OutcomeAgent:
         option_type: user-provided type (call/put/general/custom)
         """
         results_collection = []
+        scenarios = [{}] + scenarios
 
         for i, sc in enumerate(scenarios):
             params = deepcopy(self.base_params)
             params.update(sc)
 
             pricer = self.pricer_class(**params)
-            out = pricer._price_with_override(**sc)   # adapt if your method differs
-            print(out)
+            out = pricer._price_with_override(**sc)
+
+            is_base_case = (sc == {})
+
             results_collection.append({
-                "scenario_id": i+1,
+                "scenario_id": "Base Case" if is_base_case else i,
                 "changed_property": property_name,
                 "scenario_params": sc,
                 "full_params": params,
@@ -59,7 +62,7 @@ class OutcomeAgent:
             })
 
         return results_collection
-
+    
     def analyze_results(self, results, property_name, option_type) -> str:
         prompt = self._prepare_prompt(results, property_name, option_type)
         print("Running LLM analysis...")
