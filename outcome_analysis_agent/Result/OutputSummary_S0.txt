@@ -1,51 +1,51 @@
-Here is the output in JSON list:
+Here is the output in JSON list format:
 
 [
   {
-    "scenario_id": "1",
+    "scenario_id": 1,
     "verdict": "Pass",
-    "reason": "Pricing output decreases as expected when underlying price decreases"
+    "reason": "Bumped value lower than base case and behaves logically as a call option"
   },
   {
-    "scenario_id": "2",
+    "scenario_id": 2,
     "verdict": "Pass",
-    "reason": "Pricing output increases as expected when underlying price increases"
+    "reason": "Bumped value higher than base case and behaves logically as a call option"
   },
   {
-    "scenario_id": "3",
+    "scenario_id": 3,
     "verdict": "Pass",
-    "reason": "Pricing output increases further as expected when underlying price increases more"
+    "reason": "Bumped value higher than base case and behaves logically as a call option"
   },
   {
-    "scenario_id": "4",
+    "scenario_id": 4,
     "verdict": "Pass",
-    "reason": "Pricing output continues to increase as expected when underlying price increases even more"
+    "reason": "Bumped value higher than base case and behaves logically as a call option"
   },
   {
-    "scenario_id": "5",
+    "scenario_id": 5,
     "verdict": "Pass",
-    "reason": "Pricing output returns to original value as expected when underlying price is restored to the base case"
+    "reason": "Bumped value same as base case, which is logical for a call option with strike price equal to the underlying price"
   },
   {
-    "scenario_id": "6",
+    "scenario_id": 6,
     "verdict": "Pass",
-    "reason": "Pricing output increases further as expected when underlying price increases even more"
+    "reason": "Bumped value higher than base case and behaves logically as a call option"
   },
   {
-    "scenario_id": "7",
+    "scenario_id": 7,
     "verdict": "Pass",
-    "reason": "Pricing output continues to increase as expected when underlying price increases even more"
+    "reason": "Bumped value higher than base case and behaves logically as a call option"
   },
   {
-    "scenario_id": "8",
+    "scenario_id": 8,
     "verdict": "Pass",
-    "reason": "Pricing output continues to increase as expected when underlying price increases even more"
+    "reason": "Bumped value higher than base case and behaves logically as a call option"
   },
   {
-    "scenario_id": "9",
+    "scenario_id": 9,
     "verdict": "Pass",
-    "reason": "Pricing output is at its maximum as expected when the underlying price is significantly higher than the strike price"
+    "reason": "Bumped value higher than base case and behaves logically as a call option"
   }
 ]
 
-Note that all verdicts are "Pass" because the pricing output behaves logically and consistently with changes in the underlying price.
+Note: As the option type is 'call', we expect the pricing output to decrease when the underlying price decreases (S0 < 100) and increase when the underlying price increases (S0 > 100). This behavior matches our expectations, so all scenarios are marked as "Pass".

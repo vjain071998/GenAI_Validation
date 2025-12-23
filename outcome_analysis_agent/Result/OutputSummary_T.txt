@@ -4,43 +4,28 @@ Here is the output in JSON list:
   {
     "scenario_id": 1,
     "verdict": "Pass",
-    "reason": "Bumped value is lower than base case as expected for a call option with reduced time to expiration"
+    "reason": "The bumped value is lower than the base case, which is expected since a shorter time-to-maturity should decrease the option's value."
   },
   {
     "scenario_id": 2,
     "verdict": "Pass",
-    "reason": "Bumped value is higher than base case as expected for a call option with increased time to expiration"
+    "reason": "The bumped value is higher than the base case, which is expected since an intermediate time-to-maturity should increase the option's value."
   },
   {
     "scenario_id": 3,
     "verdict": "Pass",
-    "reason": "Bumped value is higher than base case as expected for a call option with increased time to expiration"
+    "reason": "The bumped value is equal to the base case, which is expected since the original time-to-maturity is used as a reference point."
   },
   {
     "scenario_id": 4,
     "verdict": "Pass",
-    "reason": "No change in bumped value, expected behavior for identical input parameters"
+    "reason": "The bumped value is higher than the base case, which is expected since a longer time-to-maturity should increase the option's value."
   },
   {
     "scenario_id": 5,
     "verdict": "Pass",
-    "reason": "Bumped value is higher than base case as expected for a call option with increased time to expiration"
-  },
-  {
-    "scenario_id": 6,
-    "verdict": "Pass",
-    "reason": "Bumped value is higher than base case as expected for a call option with increased time to expiration"
-  },
-  {
-    "scenario_id": 7,
-    "verdict": "Pass",
-    "reason": "Bumped value is higher than base case as expected for a call option with increased time to expiration"
-  },
-  {
-    "scenario_id": 8,
-    "verdict": "Pass",
-    "reason": "Bumped value is higher than base case as expected for a call option with increased time to expiration"
+    "reason": "The bumped value is higher than the base case, which is expected since an even longer time-to-maturity should further increase the option's value."
   }
 ]
 
-Note: The verdicts are based on the assumption that the pricing output behaves logically, which means it should decrease when T decreases and increase when T increases.
+Note: All verdicts are "Pass" because the pricing output behaves logically according to the changes in the 'T' property.
