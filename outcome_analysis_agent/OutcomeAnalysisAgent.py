@@ -35,11 +35,11 @@ class OutcomeAgent:
     # ---------------------------------------------------------
     # MAIN RUNNER
     # ---------------------------------------------------------
-    def run_property_test(self, scenarios, property_name, option_type="general"):
+    def run_property_test(self, scenarios, property_name):
         """
         Evaluates the behaviour of ONE property only (e.g. Spot).
         property_name: "S0", "K", "r", "sigma", etc.
-        option_type: user-provided type (call/put/general/custom)
+        scenarios: list of dicts with bumped property values
         """
         results_collection = []
         scenarios = [{}] + scenarios
@@ -62,7 +62,7 @@ class OutcomeAgent:
             })
 
         return results_collection
-    
+
     def analyze_results(self, results, property_name, option_type) -> str:
         prompt = self._prepare_prompt(results, property_name, option_type)
         print("Running LLM analysis...")

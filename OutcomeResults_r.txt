@@ -1,0 +1,133 @@
+[
+    {
+        "scenario_id": "Base Case",
+        "changed_property": "r",
+        "scenario_params": {},
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.05,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200,
+            "option_type": "call"
+        },
+        "pricing_output": 5.209498999070672
+    },
+    {
+        "scenario_id": 1,
+        "changed_property": "r",
+        "scenario_params": {
+            "r": 0.0
+        },
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.0,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200,
+            "option_type": "call"
+        },
+        "pricing_output": 4.5480408022036585
+    },
+    {
+        "scenario_id": 2,
+        "changed_property": "r",
+        "scenario_params": {
+            "r": 0.02
+        },
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.02,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200,
+            "option_type": "call"
+        },
+        "pricing_output": 4.801959363812322
+    },
+    {
+        "scenario_id": 3,
+        "changed_property": "r",
+        "scenario_params": {
+            "r": 0.04
+        },
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.04,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200,
+            "option_type": "call"
+        },
+        "pricing_output": 5.072967373620911
+    },
+    {
+        "scenario_id": 4,
+        "changed_property": "r",
+        "scenario_params": {
+            "r": 0.06
+        },
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.06,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200,
+            "option_type": "call"
+        },
+        "pricing_output": 5.3522084986273
+    },
+    {
+        "scenario_id": 5,
+        "changed_property": "r",
+        "scenario_params": {
+            "r": 0.08
+        },
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.08,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200,
+            "option_type": "call"
+        },
+        "pricing_output": 5.645233827005193
+    },
+    {
+        "scenario_id": 6,
+        "changed_property": "r",
+        "scenario_params": {
+            "r": 0.1
+        },
+        "full_params": {
+            "S0": 100,
+            "K": 100,
+            "r": 0.1,
+            "q": 0.0,
+            "sigma": 0.2,
+            "T": 1.0,
+            "N_S": 200,
+            "N_t": 200,
+            "option_type": "call"
+        },
+        "pricing_output": 5.948660153628011
+    }
+]
